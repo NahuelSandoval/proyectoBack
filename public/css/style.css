@@ -1,0 +1,376 @@
+/* home para movil------------------- */
+.contenido {
+    background: rgb(185, 183, 219);
+    background: linear-gradient(90deg, rgba(185, 183, 219, 1) 0%, rgba(252, 252, 252, 0.9612219887955182) 100%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.navbar {
+    opacity: 0.64;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    padding-top: 1rem;
+    color: black;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+}
+
+.aside {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.pie p {
+    font-size: 12px;
+}
+
+.linkdelpie {
+    display: flex;
+    flex-direction: row;
+}
+
+/* logo y links----------- */
+.logoimg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* imagenes de portada------------- */
+/* imagenes de portada------------- */
+
+.imagenes {
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+}
+
+.imagenes:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.imagenescarru {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.CarouselText {
+    color: yellow;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px black;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* tablets 768--------------- */
+
+@media(min-width:768px) {
+    h2 {
+        color: black;
+        padding-top: 1rem;
+    }
+
+    h3 {
+        font-size: 30px;
+
+    }
+
+    .imagenes {
+        border-radius: 20px;
+    }
+
+    .seccion.uno {
+        flex-direction: row;
+    }
+
+    .seccion.dos {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .seccion.tres {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .imagenes {
+        width: 50%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+/* pantallas    min-992 */
+
+@media(min-width:992px) {
+    .principal {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "griduno giddos"
+            "gridtres aside"
+        ;
+    }
+
+    .griduno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .griddos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .gridtres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccion {
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagenes {
+        width: 80%;
+        height: 80%;
+    }
+}
+/* pagina formulario--------------- */
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.campos {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    background: rgb(185,183,219);
+background: linear-gradient(270deg, rgba(185,183,219,1) 0%, rgba(252,252,252,0.9612219887955182) 100%, rgba(0,212,255,1) 100%);
+    width: 80vw;
+    height: 80vh;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    opacity: 0.64;
+    padding-bottom: 5px;
+    gap: 5px;
+}
+.celda,
+select {
+    border: none;
+    border-radius: 5px;
+    border-bottom-style: inset;
+}
+.socios input{
+    width: 20px;
+    height: 10px;
+}
+textarea {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(40, 42, 58);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+legend{
+    font-family: 'Lobster', cursive;
+}
+.celda{
+    width: 15rem;
+}
+.FormExitoso{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+        
+}
+/* --------tablettttt---------- */
+@media (min-width:768px) {
+    .campos {
+        width: 40rem;
+        align-items: center;
+        border-style: none;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    body {
+        background-color: grey
+    }
+    .socios input{
+        width: 20px;
+        height: 13px;
+    }
+    legend {
+        font-size: 2rem;
+        text-align: center;
+    }
+    textarea {
+        width: 30rem;
+        font-size: 20px;
+    }
+    .celda{
+        width: 20rem;
+        font-size: 20px;
+    }
+    .botones{
+        width: 80%;
+    }
+}
+
+/*-------------pantallas------------- */
+@media(min-width:992px) {
+    .campos {
+        width: 50rem;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    legend {
+        color: black;
+    }
+
+    .socios {
+        font-size: 25px;
+    }
+
+    .socios input {
+        width: 15px;
+        height: 12px;
+    }
+    label,
+    .terminos {
+        font-size: 17px;
+    }
+
+    .terminos input {
+        height: 12px;
+        width: 12px;
+    }
+    .celda {
+        width: 25rem;
+        height: 2rem;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        border-bottom: 5px;
+    }
+
+    textarea {
+        width: 40rem;
+        font-size: 20px;
+    }
+}
+
+
+/* pagina de nuestro club---------------- */
+.imagenescarrunos {
+    width: 80vw;
+    height: 80vh;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px;
+    font-size: 1rem;
+    opacity: 0.64;
+}
+.pie p{
+    font-size: 12px;
+}
+.linkdelpie {
+    display: flex;
+    flex-direction: row;
+}
+
+/* logo y links----------- */
+.logoimg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo {
+    padding: 5px;
+    border-radius: 5px;
+}
+@media(max-width:366px){
+    .pie {
+        align-items: normal;
+}
+}
