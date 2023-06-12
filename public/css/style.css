@@ -374,3 +374,11 @@ legend{
         align-items: normal;
 }
 }
+/* Cards */
+.caja{
+    background-color: rgba(0, 0, 0, .05);
+}
+.caja:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.05);
+}

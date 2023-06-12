@@ -25,20 +25,20 @@
                 <div class="row g-3">
                     {{#each results}}
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="card m-4 col-4 text-center" style="width: 18rem">
+                        <div class="card m-4 col-4 text-center border-0 caja" style="width: 18rem">
                             <h2 class="card-title m-3">{{producto_nombre}}</h2>
                             <img src="{{producto_imagen}}" class="card-img-top h-75" alt="{{producto_nombre}}">
-                            <div class="card-body p-0">
+                            <div class="card-body p-0 w-100">
                                 <h4 class="card-text">Producto N°: {{producto_id}}</h4>
                                 <h4 class="card-text">Precio: {{producto_precio}}</h4>
                                 <h4 class="card-text">Stock: {{producto_stock}}</h4>
-                                <a href="javascript:void(0);" class="btn btn-primary h-25 fs-5 w-100 edit"
+                                <a href="javascript:void(0);" class="btn btn-primary h-25 fs-5 w-100 edit rounded-0"
                                     data-bs-toggle="modal" data-bs-target="#EditModal" data-bs-whatever="@mdo"
                                     data-id="{{ producto_id }}" data-producto_nombre="{{producto_nombre}}"
                                     data-producto_imagen="{{producto_imagen}}"
                                     data-producto_precio="{{producto_precio}}"
                                     data-producto_stock="{{producto_stock}}">Editar</a>
-                                <a href="javascript:void(0);" class="btn btn-danger h-25 fs-5 w-100 delete"
+                                <a href="javascript:void(0);" class="btn btn-danger h-25 fs-5 w-100 delete rounded-0 rounded-bottom"
                                     data-bs-toggle="modal" data-bs-target="#DeleteModal" data-bs-whatever="@mdo"
                                     data-id="{{ producto_id }}">Eliminar</a>
                             </div>
